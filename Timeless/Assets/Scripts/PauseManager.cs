@@ -19,9 +19,13 @@ public class PauseManager : MonoBehaviour
         {
             canvas.enabled = !canvas.enabled;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadScene(0);
+            Salir();
         }
+    }
+    public void Salir()
+    {
+        Application.Quit();
     }
 }
